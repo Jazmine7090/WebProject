@@ -1,0 +1,50 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TA Management System - Login</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="phase1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="card login-card">
+                <!--card header-->
+                <div class="card-header">
+                    <img src="alfaisalLogo.jpg" alt="University Logo">
+                    <h3>TA Management System</h3>
+                </div>
+                <!--card body-->
+                <div class="card-body">
+                    <form id="loginForm" action="" method="POST">
+                        <!--card body email-->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="error-message" id="emailError">Please enter a valid email address</div>
+                        </div>
+                        <div class="mb-3">
+                            <!--card body password--> 
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" required>
+                            <div class="error-message" id="passwordError">Password must be at least 6 characters</div>
+                        </div>
+                        <!--login btn-->
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/JavaScript" src="phase1.js"></script>
+</body>
+</html>
